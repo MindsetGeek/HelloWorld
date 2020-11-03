@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using HelloWorld.Student;
+using HelloWorld.Teacher;
 
 namespace HelloWorld
 {
@@ -10,7 +12,12 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            YYYY.Profile prof = new YYYY.Profile();
+            prof.NameShow();
+
+            Teacher.Profile teacgerprof = new Teacher.Profile();
+            teacgerprof.NameShow();
+
             Console.ReadLine();
         }
     }
